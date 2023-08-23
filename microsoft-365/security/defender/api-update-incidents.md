@@ -104,8 +104,15 @@ If successful, this method returns `200 OK`. The response body will contain the 
 
 Here's an example of the request.
 
-```HTTP
- PATCH https://api.security.microsoft.com/api/incidents/{id}
+```http
+PATCH https://api.security.microsoft.com/api/incidents/{id}
+```
+
+```json
+{
+    "tags": ["Yossi's playground", "Don't mess with the Zohan"],
+    "comment": "pen testing"
+}
 ```
 
 ### Response example
